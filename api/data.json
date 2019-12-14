@@ -1,0 +1,46 @@
+{
+  "TowerIndicator": [
+	{
+	  "id": "1",
+	  "title": "Башня №1",
+	  "value": 1065,
+	  "minValue": 100,
+	  "maxValue": 1100
+	},
+	{
+	  "id": "2",
+	  "title": "Башня №2",
+	  "value": 1065,
+	  "minValue": 200,
+	  "maxValue": 1100
+	},
+	{
+	  "id": "3",
+	  "title": "Башня №3",
+	  "value": 578,
+	  "minValue": 100,
+	  "maxValue": 1500
+	},
+	{
+	  "id": "4",
+	  "title": "Башня №4",
+	  "value": 967,
+	  "minValue": 100,
+	  "maxValue": 1200
+	},
+	{
+	  "id": "5",
+	  "title": "Башня №5",
+	  "value": 1365,
+	  "minValue": 200,
+	  "maxValue": 1300
+	},
+	{
+	  "id": "6",
+	  "title": "Башня №6",
+	  "value": 200,
+	  "minValue": 300,
+	  "maxValue": 900
+	}
+  ]
+}

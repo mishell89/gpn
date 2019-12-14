@@ -1,18 +1,38 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <div class="towers-list">
+      <div class="tower-item" v-for="tower in towers">
+        <TowerItem :params="tower"></TowerItem>
+      </div>
+    </div>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import axios from 'axios'
+import TowerItem from './components/TowerItem'
+
+const apiURL = "https://api.myjson.com/bins/1cdcjc"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    TowerItem
+  },
+	data () {
+		return {
+          towers:[]
+        }
+	},
+	async created() {
+		try {
+			const res = await axios.get(apiURL)
+			this.towers = JSON.parse(JSON.stringify(res.data));
+		} catch(e) {
+			console.error(e)
+		}
+	},
 }
 </script>
 
